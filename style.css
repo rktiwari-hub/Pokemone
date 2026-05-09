@@ -7,6 +7,8 @@
     --accent-dark: #5b604a;
     --card: #ffffff;
     --shadow: 0 20px 45px rgba(52, 46, 40, 0.12);
+    --heading-min-size: 2.5rem;
+    --heading-max-size: 4.875rem;
 }
 
 * {
@@ -202,7 +204,7 @@ button {
 
 h1 {
     font-family: "Playfair Display", serif;
-    font-size: clamp(2.5rem, 1rem + 3vw, 4.875rem);
+    font-size: clamp(var(--heading-min-size), 1rem + 3vw, var(--heading-max-size));
     line-height: 0.95;
     font-weight: 500;
 }
